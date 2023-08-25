@@ -8,7 +8,7 @@ public class RunWithTimedCallbackTests
     public async Task TestRunWithTimedCallbackUsingAction()
     {
         int tickCount = 0;
-        Action tickDelegate = () => tickCount++;
+        Action tickDelegate = () => Console.WriteLine();
 
         var mainTask = Task.Delay(TimeSpan.FromSeconds(5));
         await mainTask.RunWithTimedCallback(TimeSpan.FromSeconds(1), tickDelegate);
