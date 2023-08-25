@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>git-utilities-$(AssemblyName)</PackageId>
+    <Title>Task RunWithTimedCallback extension</Title>
+    <Authors>StephaneGrobety</Authors>
+    <Company>GIT S.A.</Company>
+    <Description>An extension to the dotnet Task type to run a callback at regular interval in a separate thread until the inital task is over.</Description>
+    <Copyright>GIT S.A. (2024)</Copyright>
+  </PropertyGroup>
+
+</Project>
